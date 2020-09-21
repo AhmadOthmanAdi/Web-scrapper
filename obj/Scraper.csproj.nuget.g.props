@@ -15,7 +15,4 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgSelenium_Mozilla_Firefox_Webdriver Condition=" '$(PkgSelenium_Mozilla_Firefox_Webdriver)' == '' ">C:\Users\Adiat\.nuget\packages\selenium.mozilla.firefox.webdriver\0.6.0.1</PkgSelenium_Mozilla_Firefox_Webdriver>
-  </PropertyGroup>
 </Project>

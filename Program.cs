@@ -1,25 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using HtmlAgilityPack;
-using ScrapySharp.Extensions;
-using ScrapySharp.Network;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
 
 namespace Scraper
 {
     class Program
     {
-        static ScrapingBrowser _browser = new ScrapingBrowser();
-
         static void Main(string[] args)
         {
+            int i;
 
-            GetHtml("https://newyork.craigslist.org/d/computer-gigs/search/cpg");
+            for (i = 0; i < 15; i++)
+            {
+                IWebDriver driver = new FirefoxDriver(@"C:\Users\Adiat\Downloads\Scraper\bin\Debug\netcoreapp3.1");
+                driver.Url = "https://bing.com";
 
-        }
-        static HtmlNode GetHtml(string url)
-        {
-            WebPage webpage = _browser.NavigateToPage(new Uri(url));
-            return webpage.Html;
+                Console.WriteLine(driver.Title);
+                IWebElement textbox = driver.FindElement(By.Name("q"));
+                textbox.SendKeys("Hello World");
+                textbox.Submit();
+                Console.WriteLine(driver.Title);
+
+                driver.Quit();
+            }
         }
     }
 }

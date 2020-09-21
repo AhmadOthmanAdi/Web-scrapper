@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adiat\\OneDrive\\Mega2020\\Scraper\\Scraper.csproj": {}
+    "C:\\Users\\Adiat\\Downloads\\Scraper\\Scraper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adiat\\OneDrive\\Mega2020\\Scraper\\Scraper.csproj": {
+    "C:\\Users\\Adiat\\Downloads\\Scraper\\Scraper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adiat\\OneDrive\\Mega2020\\Scraper\\Scraper.csproj",
+        "projectUniqueName": "C:\\Users\\Adiat\\Downloads\\Scraper\\Scraper.csproj",
         "projectName": "Scraper",
-        "projectPath": "C:\\Users\\Adiat\\OneDrive\\Mega2020\\Scraper\\Scraper.csproj",
+        "projectPath": "C:\\Users\\Adiat\\Downloads\\Scraper\\Scraper.csproj",
         "packagesPath": "C:\\Users\\Adiat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adiat\\OneDrive\\Mega2020\\Scraper\\obj\\",
+        "outputPath": "C:\\Users\\Adiat\\Downloads\\Scraper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Adiat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,22 +38,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "HtmlAgilityPack": {
-              "target": "Package",
-              "version": "[1.11.24, )"
-            },
-            "ScrapySharp": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Selenium.Firefox.WebDriver": {
-              "target": "Package",
-              "version": "[0.27.0, )"
-            },
-            "Selenium.Mozilla.Firefox.Webdriver": {
-              "target": "Package",
-              "version": "[0.6.0.1, )"
-            },
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.0.0-alpha05, )"
